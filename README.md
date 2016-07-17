@@ -77,7 +77,8 @@ for you in addition to handling some other gotchas:
 var remote = require('electron').remote;
 var webFrame = require('electron').webFrame;
 var SpellCheckProvider = require('electron-spell-check-provider');
-var buildEditorContextMenu = require('electron-editor-context-menu');
+// `remote.require` since `Menu` is a main-process module.
+var buildEditorContextMenu = remote.require('electron-editor-context-menu');
 
 var selection;
 function resetSelection() {
