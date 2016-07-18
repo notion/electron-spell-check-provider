@@ -29,8 +29,7 @@ webFrame.setSpellCheckProvider('en-US', true, new SpellCheckProvider('en-US'));
 npm install electron-spell-check-provider --save
 ```
 
-_Note:_ this uses a native module, so don't forget to
-[rebuild your modules][rebuild] after installing.
+_Note:_ This uses a native module, so you will need to [rebuild your modules][rebuild] after installing.
 
 ## Usage
 
