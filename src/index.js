@@ -30,6 +30,10 @@ _.extend(SpellCheckProvider.prototype, {
       this.emit('misspelling', spellchecker.getCorrectionsForMisspelling(text));
     }
     return !textIsMisspelled;
+  },
+
+  add: function(text) {
+    spellchecker.add(text);
   }
 });
 
