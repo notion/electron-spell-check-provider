@@ -124,6 +124,19 @@ window.addEventListener('contextmenu', function(e) {
 });
 ```
 
+### Adding words to the dictionary
+
+You can add a word to the spell-check dictionary by calling the `add` instance method. Pass the word to add as an argument. Additions to the dictionary are persistent.
+
+```javascript
+let provider = new SpellCheckProvider('en-US');
+// ...
+let newWord = window.getSelection().toString();
+provider.add(newWord);
+```
+
+You can do this in a context menu click handler function for an "Add to Dictionary" menu item.
+
 ## Contributing
 
 We welcome pull requests! In particular, we'd love to see support for additional
