@@ -1,7 +1,7 @@
 var _ = require('underscore');
 var EventEmitter = require('events');
 var SKIP_WORDS = require('./skipWords');
-var spellchecker = require('spellchecker');
+var spellchecker = require('notion-spellchecker');
 var util = require('util');
 
 /**
